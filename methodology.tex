@@ -1,0 +1,15 @@
+\section{Research Methodology}
+
+The previous questions form the high-level milestone toward a complete lifelong NPCs. However, before to solve that challenges, we need to tackle several academic open problems. A preliminary list of research steps is summarized below:
+
+\begin{methodologies}
+\item We first focus on action-driven behavior for NPCs and investigate the unexplored area of hybrid approaches based on STRIPS \cite{fikes1972strips}, HTN \cite{DBLP:conf/ijcai/Sacerdoti75} and BTs \cite{Isla05BehaviorTrees}. In particular, we intend to look into the issues of i) appropriate precomputing steps for speeding up the deliberation runtime by using offline resources (e.g., plan precomputation), and ii) the use of modern GPU computing for exploiting online resources. These are two fundamental preliminary step. In fact we need a solid and efficient low-deliberative-level upon which we can start building the persistent processes. If the used deliberation method is not powerful enough or it is too greedy in resources by itself, the whole NPC can be unusable in practice.
+%
+\item Then we focus on the lifelong aspect of action-driven NCPs and the issues of storing/retrieving video game events as they are experienced by the NPC. In particular we intend to look into these issues i) design of a standardized language for representing the lifelong events, based (or inspired by) logical and practical languages used in the semantic web, and ii) study the complexity of queries and identify classes that provide useful information for games that can be efficiently computed. In this phase LML and KR reasoning can be used in order to elaborate, filter and classify stored information.
+%
+%\item Develop methodologies for planning precomputation in an incremental way for videogames domains. [TODO]
+%
+\item Once we obtain a suitable single lifelong NPCs we can start to investigate the behavior of lifelong characters in a multi-agent setting. This involve communication skills for the agent and the development of a protocol for information exchange between agents. In particular we can i) develop a generalized knowledge transfer protocol that is fast enough to be used in real time applications ii) expand the action-driven behavior techniques explored in M1 in order to exploit communication capability so to achieve multi-agent planning iii) expand the protocol to make possible for an agent to exchange information with the object in the environment (\emph{smart-objects}).
+%
+\item Finally we have to explore the application of the developed lifelong NPCs in a real game scenario using real commercial engine like \emph{Unity}\footnote{\url{http://en.wikipedia.org/wiki/Unity_(game_engine)}} and the \emph{Source Engine}\footnote{\url{http://en.wikipedia.org/wiki/Source_engine}}. This phase can be divided in two main step: i) design development tools to make easy to use the proposed technologies and to facilitate the creation of lifelong NPCs ii) test, evaluation and benchmarking of the lifelong agents inside commercial games by both using existing widely used game engines and modding actual video games.
+\end{methodologies}

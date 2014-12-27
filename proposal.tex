@@ -1,0 +1,109 @@
+%
+% proposal.tex
+%
+% Dissertation Proposal Template.
+% School of Computing
+% Clemson University
+%
+\documentclass[10pt]{ClemsonProposal}
+
+% This is nice for source code listings
+% \usepackage{listings}
+
+% This is needed to include figures
+% \usepackage{graphicx}
+
+% Use any additional packages you might need
+\usepackage[style=IEEE,useprefix,hyperref,backend=bibtex]{biblatex}
+\bibliography{bibliography.bib}
+
+\usepackage{enumitem}
+
+%
+% Give values to the variables used in this document
+%
+\title{Practical Knowledge Representation and Reasoning  for Non-Player-Characters as lifelong AI agents}
+\department{Information Engineering, Informatics and Statistics}
+\documenttype{Research Proposal}
+\major{Computer Science}
+\proposalday{27}
+\proposalmonth{August}
+\proposalyear{2013}
+\author{Davide Aversa}
+\committeechair{Chair Name}
+\committeememberone{Member1 Name}
+\committeemembertwo{Member2 Name}
+\committeememberthree{Member3 Name}
+
+% Just in case you have more then 3 committee members
+% \committeememberfour{Member4 Name}
+% \committeememberfive{Member5 Name}
+% \committeemembersix{Member6 Name}
+
+%
+% PDF Setup -- You should not need to change this
+%
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={black},
+    filecolor={black},
+    urlcolor={black},
+    pdftitle={\thetitle},
+    pdfauthor={\theauthorc},
+    pdfsubject={\thedocumenttype},
+    pdfkeywords={Clemson University, \theauthor, \thedocumenttype},
+    pdfstartpage={1}
+}
+
+
+%
+% User-specified command definitions/redefinitions
+%
+\newcommand{\cplusplus}{{\rm C\raise.5ex\hbox{\small ++}}}
+
+\newlist{goals}{enumerate}{1}
+\setlist[goals]{label=G\arabic*}
+
+\newlist{methodologies}{enumerate}{1}
+\setlist[methodologies]{label=M\arabic*}
+
+\begin{document}
+%   ==========================================================================
+%   Begin front matter (pages are numbered with roman numerals)
+%   ==========================================================================
+    \begin{frontmatter}
+        \maketitle
+		%\tableofcontents
+        \newpage
+
+        % Generate the abstract
+        %\input{abstract.tex}
+	\end{frontmatter}
+
+
+
+%   ==========================================================================
+%   Begin main matter (pages are numbered with arabic numerals)
+%   ==========================================================================
+    \doublespacing     % Text should be double spaced
+    \pagestyle{fancy}  % Turn the nice header on for the rest of the document
+
+    %
+    % I use a file for every section.  Each of these corresponds to a file
+    % with the specified name ending in '.tex' (e.g., introduction.tex).
+    %
+    \input{introduction}
+    \input{background}
+	\input{challenge}
+	\input{methodology}
+	\input{conclusion}
+
+
+
+%   ==========================================================================
+%   Wrap up the document with the Bibliography (looks for the specified .bib)
+%   ==========================================================================
+	\addcontentsline{toc}{section}{Bibliography}
+    \printbibliography
+\end{document}

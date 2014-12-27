@@ -1,0 +1,17 @@
+\section{Aims and challenges}
+
+The development of lifelong agents in game, and in particular of lifelong NPCs, raises several questions and technological challenges. They can be divided in two main \emph{research goals} sets which represent the two main effort of this work: the first one (G1-G3) contains questions about generic lifelong agents in artificial intelligence; the second one (G5), instead, is about to bring lifelong agents in a practical game scenario.
+
+\begin{goals}
+\item \textbf{How is it possible to store and query efficiently past events in a multi-agent setting?} Develop a \emph{knowledge base} that is easy to query and update is one of the main challenge toward an autonomous lifelong agent. In particular, this type of agents must be able to keep information coming from the world, humans and other lifelong agents in the specified environment. %These information will make up the NPC's ``life'' data.
+%
+Furthermore, it is obviously impossible to store \emph{every} event perceived by the agent. So, lifelong agent must be able to filter the relevant information form those not useful. Develop this mechanism is an important and interesting challenge to solve.
+%
+%\item \textbf{According to which method is it possible to filter these information?} 
+% 
+\item \textbf{How is it possible to use these information to answer queries about future events?} Once a lifelong agent's knowledge base is filled of world information, we must develop a practical method to use them in an useful way. For instance, a lifelong agent can use its KB in combination with \emph{Machine Learning} techniques in order to classify players, events or locations. Another interesting use is to combine them with other specifications (i.e., multi-agent communication, effect axioms, and so on) to answer queries about future events or to produce more realistic decisions (\emph{planning}). Must be noticed that a lifelong agent is an agent which continuously learn from its environment and that LML techniques can not be ignored. 
+%
+\item \textbf{How these agents can be programmed? And how they can communicate each other?} This two problems are strictly correlated. Both require the definition of a language which can be used by the developer to insert an initial knowledge into the agent and to set its personality,  objectives and life goals (in terms of \emph{desires} and \emph{intentions}). This language can be also expanded so that it can be used by multiple agents to exchange information each other.  This language of behaviors, for instance, may use features coming from \emph{Belief-Desire-Intention} software model, \emph{Planning Domain Definition Language}, \emph{Behavior Trees} and \emph{Hierarchical Task Networks} as well as inspiration from high-level agent  programming languages for cognitive robotics like GOLOG \cite{levesque1997golog} in order to be powerful and easy to use.
+%
+\item \textbf{What are the different roles that lifelong agents can take in the varous game settings and under which conditions is this practical?} Moving these lifelong agent in a video game setting introduce additional (mostly performance) constraints. It is important to check how this lifelong system can be merged with the modern state of the art decision making techniques. Moreover, implementing a lifelong agent must be simple and therefore suitable development tools need to be produced.
+\end{goals}
